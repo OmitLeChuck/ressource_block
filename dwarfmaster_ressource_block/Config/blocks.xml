@@ -1,1 +1,69 @@
-<!-- stub -->
+<configs>
+    <append xpath="/blocks">
+        <block name="oreOrb">
+            <property name="DescriptionKey" value="oreOrb-desc"/>
+            <property name="Tags" value="ore,surfaceOre,orb"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="StabilitySupport" value="true"/>
+
+            <property name="PassThroughDamage" value="true" />
+
+            <property name="Shape" value="ModelEntity" />
+            <property name="Model" value="Entities/OutdoorDecor/canPalletPrefab" />
+            <property name="ImposterExchange" value="imposterBlock" param1="139" />
+            <property name="IsTerrainDecoration" value="true" />
+
+            <property name="CustomIcon" value="palletCans"/>
+            <property name="CustomIconTint" value="FF0000"/>
+            <property name="TintColor" value="255,0,0"/>
+
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="IsDistantDecoration" value="false"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+
+            <property name="FilterTags" value="MC_outdoor,SC_decor"/>
+            <property name="Material" value="oreOrb"/>
+            <property name="Map.Color" value="255,255,64"/>
+
+            <drop event="Destroy" name="oreOrb" count="1"/>
+
+            <drop event="Harvest" name="resourceRockSmall" count="10000" tag="orbStone"/>
+            <drop event="Harvest" name="resourceClayLump" count="5000" tag="orbStone"/>
+            <drop event="Harvest" name="resourceCrushedSand" count="2500" tag="orbStone"/>
+            <drop event="Harvest" name="resourceCoal" count="2500" tag="orbStone"/>
+            <drop event="Harvest" name="resourceCement" prob=".1" count="50" tag="orbStone"/>
+            <drop event="Harvest" name="resourceCobblestones" prob=".1" count="50" tag="orbStone"/>
+            <drop event="Harvest" name="resourceConcreteMix" prob=".1" count="50" tag="orbStone"/>
+
+            <drop event="Harvest" name="resourcePotassiumNitratePowder" count="10000" tag="orbChemical"/>
+            <drop event="Harvest" name="resourceOilShale" count="5000" tag="orbChemical"/>
+            <drop event="Harvest" name="resourceGunPowder" prob=".1" count="200" tag="orbChemical"/>
+            <drop event="Harvest" name="resourceAcid" prob=".1" count="200" tag="orbChemical"/>
+            <drop event="Harvest" name="resourceOil" prob=".1" count="200" tag="orbChemical"/>
+            <drop event="Harvest" name="resourcePaint" prob=".1" count="200" tag="orbChemical"/>
+
+            <drop event="Harvest" name="resourceWood" count="10000" tag="orbOrganic"/>
+            <drop event="Harvest" name="resourceYuccaFibers" count="5000" tag="orbOrganic"/>
+            <drop event="Harvest" name="resourceBone" prob=".1" count="200" tag="orbOrganic"/>
+            <drop event="Harvest" name="resourceLeather" prob=".1" count="200" tag="orbOrganic"/>
+            <drop event="Harvest" name="resourceFeather" prob=".1" count="200" tag="orbOrganic"/>
+            <drop event="Harvest" name="resourceAnimalFat" prob=".1" count="200" tag="orbOrganic"/>
+            <drop event="Harvest" name="resourceCropAloeLeaf" prob=".1" count="200" tag="orbOrganic"/>
+            <drop event="Harvest" name="resourceSnowBall" prob=".1" count="200" tag="orbOrganic"/>
+            <drop event="Harvest" name="resourcePaper" prob=".1" count="200" tag="orbOrganic"/>
+
+            <drop event="Harvest" name="resourceScrapIron" count="10000" tag="orbMetal"/>
+            <drop event="Harvest" name="resourceScrapLead" count="5000" tag="orbMetal"/>
+            <drop event="Harvest" name="resourceScrapBrass" count="2500" tag="orbMetal"/>
+            <drop event="Harvest" name="resourceSpring" prob=".1" count="200" tag="orbMetal"/>
+            <drop event="Harvest" name="resourceNail" prob=".1" count="200" tag="orbMetal"/>
+            <drop event="Harvest" name="resourceMetalPipe" prob=".1" count="200" tag="orbMetal"/>
+
+            <drop event="Fall" name="resourceSilverNugget" prob=".05" count="1"/>
+            <drop event="Fall" name="resourceGoldNugget" prob=".01" count="1"/>
+            <drop event="Fall" name="resourceRawDiamond" prob=".001" count="1"/>
+
+        </block>
+    </append>
+</configs>

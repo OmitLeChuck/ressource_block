@@ -1,0 +1,35 @@
+<configs>
+    <append xpath="/recipes">
+        <recipe name="oreOrb" count="1">
+            <ingredient name="resourceRockSmall" count="100000"/>
+            <ingredient name="resourceWood" count="100000"/>
+            <ingredient name="resourcePotassiumNitratePowder" count="50000"/>
+            <ingredient name="resourceGoldNugget" count="200"/>
+            <ingredient name="resourceRawDiamond" count="50"/>
+        </recipe>
+        <recipe name="orbAxeStone" count="1">
+            <ingredient name="resourceRockSmall" count="10000"/>
+            <ingredient name="meleeToolRepairT0StoneAxe" count="50"/>
+            <ingredient name="resourceRawDiamond" count="1"/>
+        </recipe>
+
+        <recipe name="orbAxeChemical" count="1">
+            <ingredient name="resourcePotassiumNitratePowder" count="10000"/>
+            <ingredient name="meleeToolRepairT0StoneAxe" count="50"/>
+            <ingredient name="resourceRawDiamond" count="1"/>
+        </recipe>
+
+
+        <recipe name="orbAxeOrganic" count="1">
+            <ingredient name="resourceWood" count="10000"/>
+            <ingredient name="meleeToolRepairT0StoneAxe" count="50"/>
+            <ingredient name="resourceRawDiamond" count="1"/>
+        </recipe>
+
+        <recipe name="orbAxeMetal" count="1">
+            <ingredient name="resourceScrapIron" count="10000"/>
+            <ingredient name="meleeToolRepairT0StoneAxe" count="50"/>
+            <ingredient name="resourceRawDiamond" count="1"/>
+        </recipe>
+    </append>
+</configs>

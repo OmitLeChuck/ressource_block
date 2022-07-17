@@ -1,0 +1,147 @@
+<configs>
+    <append xpath="/items">
+        <item name="orbAxeStone">
+            <property name="DescriptionKey" value="orbAxeStone-desc"/>
+            <property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+            <property name="CustomIconTint" value="555555"/>
+            <property name="TintColor" value="85,85,85"/>
+            <property name="Material" value="Mmetal_medium"/>
+            <property name="Tags" value="axe,melee,light,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,perkTheHuntsman,canHaveCosmetic"/>
+            <property name="DisplayType" value="melee"/>
+            <property name="HoldType" value="32"/>
+            <property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/stone_axePrefab.prefab"/>
+            <property name="RepairTools" value="resourceRepairKit"/>
+            <property name="SellableToTrader" value="false"/>
+            <property name="DegradationBreaksAfter" value="false"/>
+            <property name="SoundJammed" value="ItemNeedsRepair"/>
+            <property name="SoundDestroy" value="wooddestroy1"/>
+            <property name="ShowQuality" value="false"/>
+            <property class="Action0">
+                <property name="Class" value="DynamicMelee"/>
+                <property name="Sphere" value=".1"/>
+                <property name="Sound_start" value="swoosh"/>
+                <property name="ToolCategory.Butcher" value="0" param1="4"/>
+                <property name="GrazeStart" value=".15"/>
+                <property name="GrazeEnd" value=".3"/>
+                <property name="SwingDegrees" value="45"/>
+                <property name="SwingAngle" value="135"/>
+                <property name="UseGrazingHits" value="true"/>
+                <property class="HitSounds">
+                    <property name="Override0" value="organic" param1="stonehitorganic"/>
+                </property>
+                <property class="GrazeSounds">
+                    <property name="Override0" value="organic" param1="metalgrazeorganic"/>
+                </property>
+            </property>
+            <property class="Action1">
+                <property name="Class" value="DynamicMelee"/>
+                <property name="Sphere" value=".1"/>
+                <property name="Sound_start" value="swoosh"/>
+                <property name="ToolCategory.Butcher" value="0" param1="4"/>
+                <property name="GrazeStart" value=".15"/>
+                <property name="GrazeEnd" value=".3"/>
+                <property name="SwingDegrees" value="45"/>
+                <property name="SwingAngle" value="135"/>
+                <property name="UseGrazingHits" value="true"/>
+                <property class="HitSounds">
+                    <property name="Override0" value="organic" param1="stonehitorganic"/>
+                </property>
+                <property class="GrazeSounds">
+                    <property name="Override0" value="organic" param1="metalgrazeorganic"/>
+                </property>
+            </property>
+            <effect_group name="orbAxeStone">
+                <passive_effect name="EntityDamage" operation="base_set" value="0"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="50"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="250"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="1" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="500"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+                <passive_effect name="MaxRange" operation="base_set" value="3"/>
+                <passive_effect name="BlockRange" operation="base_set" value="3"/>
+                <passive_effect name="ModSlots" operation="base_set" value="5"/>
+                <passive_effect name="PlayerExpGain" operation="base_set" value="5"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="1" tags="orbStone"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbChemical"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbOrganic"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbMetal"/>
+            </effect_group>
+            <property name="Group" value="Tools/Traps,Basics"/>
+        </item>
+        <item name="orbAxeChemical">
+            <property name="Extends" value="orbAxeStone" />
+            <property name="DescriptionKey" value="orbAxeChemical-desc"/>
+            <property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+            <property name="CustomIconTint" value="0000FF"/>
+            <property name="TintColor" value="0,0,255"/>
+            <property name="Tags" value="axe,melee,light,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,perkTheHuntsman,canHaveCosmetic"/>
+            <effect_group name="orbAxeChemical">
+                <passive_effect name="EntityDamage" operation="base_set" value="0"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="50"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="250"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="1" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="500"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+                <passive_effect name="MaxRange" operation="base_set" value="3"/>
+                <passive_effect name="BlockRange" operation="base_set" value="3"/>
+                <passive_effect name="ModSlots" operation="base_set" value="5"/>
+                <passive_effect name="PlayerExpGain" operation="base_set" value="5"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbStone"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="1" tags="orbChemical"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbOrganic"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbMetal"/>
+            </effect_group>
+            <property name="Group" value="Tools/Traps,Basics"/>
+        </item>
+        <item name="orbAxeOrganic">
+            <property name="Extends" value="orbAxeStone" />
+            <property name="DescriptionKey" value="orbAxeOrganic-desc"/>
+            <property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+            <property name="CustomIconTint" value="529326"/>
+            <property name="TintColor" value="82,147,38"/>
+            <property name="Tags" value="axe,melee,light,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,perkTheHuntsman,canHaveCosmetic"/>
+            <effect_group name="orbAxeChemical">
+                <passive_effect name="EntityDamage" operation="base_set" value="0"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="50"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="250"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="1" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="500"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+                <passive_effect name="MaxRange" operation="base_set" value="3"/>
+                <passive_effect name="BlockRange" operation="base_set" value="3"/>
+                <passive_effect name="ModSlots" operation="base_set" value="5"/>
+                <passive_effect name="PlayerExpGain" operation="base_set" value="5"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbStone"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbChemical"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="1" tags="orbOrganic"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbMetal"/>
+            </effect_group>
+            <property name="Group" value="Tools/Traps,Basics"/>
+        </item>
+        <item name="orbAxeMetal">
+            <property name="Extends" value="orbAxeStone" />
+            <property name="DescriptionKey" value="orbAxeMetal-desc"/>
+            <property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+            <property name="CustomIconTint" value="CCCC00"/>
+            <property name="TintColor" value="204,204,0"/>
+            <property name="Tags" value="axe,melee,light,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,perkTheHuntsman,canHaveCosmetic"/>
+            <effect_group name="orbAxeChemical">
+                <passive_effect name="EntityDamage" operation="base_set" value="0"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="50"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="250"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="1" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="500"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+                <passive_effect name="MaxRange" operation="base_set" value="3"/>
+                <passive_effect name="BlockRange" operation="base_set" value="3"/>
+                <passive_effect name="ModSlots" operation="base_set" value="5"/>
+                <passive_effect name="PlayerExpGain" operation="base_set" value="5"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbStone"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbChemical"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="0" tags="orbOrganic"/>
+                <passive_effect name="HarvestCount" operation="base_set" value="1" tags="orbMetal"/>
+            </effect_group>
+            <property name="Group" value="Tools/Traps,Basics"/>
+        </item>
+    </append>
+</configs>

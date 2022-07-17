@@ -9,7 +9,7 @@ When the block is dismantled, you get it back and have to reposition it to harve
 
 The speed of the axes is increased and XP is greatly reduced.
 
-## Installaition
+## Installation
 
 copy the folder in to your Mods-folder (local or serverside) - restart - ready
 

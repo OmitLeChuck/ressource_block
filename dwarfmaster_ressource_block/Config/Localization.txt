@@ -1,0 +1,11 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,german,english
+orbAxeChemical,,,,,"Rohstoff-Axt-Chemie","Raw-Axe-Chemical"
+orbAxeChemical-desc,,,,,"Die Rohstoff-Axt-Chemie ist für den Rohstoff-Block gedacht und funktioniert nur dort sinnvoll.","The resource axe chemical is intended for the resource block and works only there useful."
+orbAxeMetal,,,,,"Rohstoff-Axt-Metall","Raw-Axe-Metal"
+orbAxeMetal-desc,,,,,"Die Rohstoff-Axt-Stein ist für den Rohstoff-Block gedacht und funktioniert nur dort sinnvoll.","The resource axe metal is intended for the resource block and works only there useful."
+orbAxeOrganic,,,,,"Rohstoff-Axt-Organisch","Raw-Axe-Organic"
+orbAxeOrganic-desc,,,,,"Die Rohstoff-Axt-Organisch ist für den Rohstoff-Block gedacht und funktioniert nur dort sinnvoll.","The resource axe organic is intended for the resource block and works only there useful."
+orbAxeStone,,,,,"Rohstoff-Axt-Stein","Raw-Axe-Stone"
+orbAxeStone-desc,,,,,"Die Rohstoff-Axt-Stein ist für den Rohstoff-Block gedacht und funktioniert nur dort sinnvoll.","The resource axe stone is intended for the resource block and works only there useful."
+oreOrb,,,,,"Rohstoff-Block","Raw-Block"
+oreOrb-desc,,,,,"Dieser Block enthält sehr viel Rohstoffe und nach dem Abbau befindet er sich wieder im Rucksack und man muss ihn nur erneut platzieren.\nAbbauen ist nur sinnvoll mit den Rohstoff Äxten. Alle anderen Werkzeuge funktionieren nicht.","This block contains a lot of resources and after mining it is back in the backpack and you just have to place it again.\nMining only makes sense with the resource axes. All other tools do not work."
